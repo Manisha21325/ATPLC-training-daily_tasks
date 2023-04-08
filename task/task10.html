@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>basic information form</title>
+        <style>
+            body{
+                background-color: bisque;
+            }
+            form{
+                background-color: darkgray;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+            }
+            label{
+                display: block;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"],
+            select{
+                width:100%;
+                padding: 7px;
+                border-radius: 4px;
+                border:1px solid #ccc;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+
+            }
+            input[type="radio"],
+            input[type="checkbox"]{
+                margin-right: 10px;
+            }
+            input[type="submit"],
+            input[type="reset"]{
+                background-color: azure;
+                color: white;
+                padding: 10px 20px;
+                border:none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-right: 10px;
+
+            }
+            input[type="submit"]:hover,
+            input[type="reset"]:hover{
+                background-color: red;
+            }
+            .form-group{
+                margin-bottom: 20px;
+
+            }
+            .error{
+                color:red;
+                font-style: italic;
+                font-size: 0.8em;
+            }
+                    </style>
+    </head>
+    <body>
+        <form id="basic-info-form">
+            <div class="form-grpup">
+                <label for="name">Name</label>
+                <input type="text"id="name"
+                name="name"required>
+            </div>
+            <div class="form-group">
+                <lable for="mobile">Mobile</lable>
+                <input type="tel"id="mobile"name="mobile"required>
+
+            </div>
+            <div class="form-group">
+                <lable for="email">Email address</lable>
+                <input type="email"id="email"name="email"required>
+            </div>
+            <div class="form-group">
+                <lable for="gender">Gender:</lable>
+                <label>
+                    <input type="radio"name="gender"value="male"required>Male
+                </label>
+                <lable>
+                    <input type="radio"name="gender"value="female"required>Female
+                </lable>
+                <lable>
+                    <input type="radio"name="gender"value="other"required>other
+                </lable>
+            </div>
+            <div class="form-group">
+                <lable>education done
+                </lable>
+                <lable>
+                    <input type="checkbox"name="education"value="high-school">High-school
+                </lable>
+                <lable>
+                    <input type="checkbox"name="education"value="undergraduates">Undergraduates
+                </lable>
+                <lable>
+                    <input type="checkbox"name="education"value="postgraduate">Postgraduate
+                </lable>
+
+            </div>
+            <div class="form-group">
+                <lable for="tea">
+                    DO U LIKE TEA?
+                </lable>
+                <select id="tea" name="tea"required>
+                    <option value="">please select one</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit"value="submit">
+                <input type="reset"value="reset">
+
+            </div>
+            </form>
+            
+    </body>
+</html>
